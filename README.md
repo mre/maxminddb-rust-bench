@@ -20,6 +20,17 @@ This will look up 10_000 random IPs and measure the runtime with
 It will also run a benchmark using [rayon]
 for additional performance.
 
+# Runtime for looking up 10_000 IPs
+
+## Single threaded
+
+![](assets/maxminddb.svg)
+
+## Multithreaded using rayon
+
+![](assets/maxminddb_par.svg)
+
+
 [rayon]: https://github.com/rayon-rs/rayon
 [maxminddb-rust]: https://github.com/oschwald/maxminddb-rust
 [criterion.rs]: https://github.com/bheisler/criterion.rs
